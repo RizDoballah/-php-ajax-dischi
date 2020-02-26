@@ -6,7 +6,6 @@
 
 body {
   width: 100%;
-  background-color: $primaryColor;
 }
 
 header {
@@ -15,8 +14,10 @@ header {
   .header-container {
     width: 80%;
     margin: auto;
+    line-height:$headerHeight;
     img {
-      width: 5%;
+      width: 4%;
+      vertical-align: middle;
     }
   }
 }
