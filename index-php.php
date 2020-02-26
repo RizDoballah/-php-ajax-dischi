@@ -1,3 +1,5 @@
+<?php include __DIR__ . '/database.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -30,7 +32,11 @@
 
     </main>
     <!-- /Main -->
+    <!-- Footer -->
+    <footer>
 
-    <script src="dist/app.js" charset="utf-8"></script>
+    </footer>
+    <!-- /Footer -->
+
   </body>
 </html>

@@ -6,13 +6,16 @@
 
 body {
   width: 100%;
+  font-family:  $fontFamily;
+  font-size:$font;
+  background-color: $colorLight;
 }
 
 header {
   height: $headerHeight;
-  background-color: $secondaryrColor;
+  background-color: $colorDark;
   .header-container {
-    width: 80%;
+    width: $containerWidth;
     margin: auto;
     line-height:$headerHeight;
     img {

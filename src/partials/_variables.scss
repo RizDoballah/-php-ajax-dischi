@@ -1,5 +1,10 @@
+// Fonts
+$fontFamily: 'Roboto', sans-serif;
+$font: 14px;
+$fontH3 : $font*1.2;
 // Size
 $headerHeight: 60px;
+$containerWidth: 80%;
 // Colors
-$primaryColor: #191919;
-$secondaryrColor: black;
+$colorDark: #000;
+$colorLight:  lighten($colorDark, 10);
