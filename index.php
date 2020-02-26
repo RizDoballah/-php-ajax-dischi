@@ -17,19 +17,24 @@
     <!-- Main -->
     <main>
       <div class="main-container">
-        <?php foreach ($database as $cd): ?>
-        <div class="cd">
-            <img class="cd-image" src="<?php echo $cd['poster']; ?>" alt="poster">
-            <h3 class="cd-title"><?php echo $cd['title']; ?></h3>
-            <h4 class="cd-author"><?php echo $cd['author']; ?></h4>
-            <h5 class="cd-date"><?php echo $cd['year']; ?></h5>
-        </div>
 
-      <?php endforeach; ?>
       </div>
 
     </main>
     <!-- /Main -->
+
+    <!-- Handlebars -->
+    <script id="entry-template" type="text/x-handlebars-template">
+      <div class="cd">
+          <img class="cd-image" src="{{poster}}" alt="{{title}}">
+          <h3 class="cd-title">{{title}}</h3>
+          <h4 class="cd-author">{{author}}</h4>
+          <h5 class="cd-date">{{date}}</h5>
+      </div>
+
+
+
+    </script>
 
     <script src="dist/app.js" charset="utf-8"></script>
   </body>

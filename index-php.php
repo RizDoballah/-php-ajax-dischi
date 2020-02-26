@@ -21,7 +21,7 @@
       <div class="main-container">
         <?php foreach ($database as $cd): ?>
         <div class="cd">
-            <img class="cd-image" src="<?php echo $cd['poster']; ?>" alt="poster">
+            <img class="cd-image" src="<?php echo $cd['poster']; ?>" alt="<?php echo $cd['title']; ?>">
             <h3 class="cd-title"><?php echo $cd['title']; ?></h3>
             <h4 class="cd-author"><?php echo $cd['author']; ?></h4>
             <h5 class="cd-date"><?php echo $cd['year']; ?></h5>
