@@ -1,5 +1,22 @@
-<?php include __DIR__ .'/database.php';
+<?php
+  include 'database.php';
 
-header('Content-Type: application/json');
-echo json_encode($database);
-?>
+  if (!empty($_GET['author'])) {
+    $filtredCds = [];
+
+    foreach ($database as $cd) {
+      if($_GET['author'] == $cd['author']) {
+        $filtredCds[] = $cd;
+      }
+    }
+    // var_dump($cdsFiltered); die();
+
+    header('Content-Type: application/json');
+    echo json_encode($filtredCds);
+
+  } else {
+    
+    header('Content-Type: application/json');
+    echo json_encode($database);
+
+  }
