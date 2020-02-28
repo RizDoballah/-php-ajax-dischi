@@ -27,6 +27,16 @@ header .header-container img {
   vertical-align: middle;
 }
 
+header select {
+  float: right;
+  margin: 15px;
+  background-color: #000;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #1ED760;
+  color: #fff;
+}
+
 main {
   width: 100%;
 }
@@ -35,7 +45,7 @@ main .main-container {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
-  margin: auto;
+  margin: 80px auto;
 }
 
 main .main-container .cd {

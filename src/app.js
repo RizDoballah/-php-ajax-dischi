@@ -18,26 +18,25 @@ $(document).ready(function() {
     }
 
   });
-  $('#search-cd').on('change', function(){
-    console.log('ciao');
- //   var author = $(this).val();
- //   console.log(author);
- //   $.ajax({
- //     url: 'http://localhost:8888/php-ajax-dischi/server.php',
- //     method: 'GET',
- //     data: {
- //       'author': author
- //     },
- //     success: function (data) {
- //       console.log(data);
- //       $('.cd').html('');
- //       printData(data);
- //     },
- //     error: function () {
- //       alert('Errore');
- //     }
- //   });
- // });
+  $("#search-cd").change(function(){
+   var author = $(this).val();
+   console.log(author);
+   $.ajax({
+     url: 'http://localhost:88/php-ajax-dischi/server.php',
+     method: 'GET',
+     data: {
+       'author': author
+     },
+     success: function (data) {
+       console.log(data);
+       $('.main-container').html('');
+       printData(data);
+     },
+     error: function () {
+       alert('Errore');
+     }
+   });
+ });
 
 
 });

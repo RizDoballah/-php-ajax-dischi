@@ -13,14 +13,14 @@
       </div>
       <?php include 'database.php'
        ?>
-      <select name="search" id="search-cd">
-        <option value="">All</option>
-        <?php foreach ($database as $value) {
+       <select name="search" id="search-cd">
+       <option value="">All</option>
+       <?php foreach ($database as $value) {
          ?>
-        <option value="<?php echo $value['author'] ?>"><?php  echo $value['author'] ?></option>
-        <?php }
+         <option value="<?php echo $value['author'] ?>"><?php  echo $value['author'] ?></option>
+         <?php }
          ?>
-      </select>
+         </select>
 
     </header>
     <!-- /Header -->

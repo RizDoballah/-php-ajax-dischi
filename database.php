@@ -13,12 +13,6 @@ $database = [
       'poster' => 'https://static.posters.cz/image/750/poster/queen-live-at-wembley-i69296.jpg'
     ],
     [
-      'title' => 'One more car, One more driver',
-      'author' => 'Eric Clapton',
-      'year' => 2002,
-      'poster' => 'https://images-na.ssl-images-amazon.com/images/I/81lR-Qe4X2L._SX466_.jpg'
-    ],
-    [
       'title' => "Ten Summoner's Tales",
       'author' => 'Sting',
       'year' => 1993,
